@@ -1,0 +1,210 @@
+/* 
+ * #1 Body 
+ */
+body {
+    background-image: url(../img/bg-w-logo.svg);
+    background-repeat: no-repeat;
+    background-size: 768px;
+    background-position: top  -100px  center;
+    margin-top: 80px;
+    font-family: $bodyFont;
+    font-size: 22px;
+    overflow-x: hidden;
+}
+.logo-brand {
+    height: 40px;
+}
+/* 
+ * #2 Generic Section Style
+ */
+.section {
+    padding-top: 100px; 
+    padding-bottom: 100px;
+    width:100%;
+    overflow-x: hidden
+}
+/* 
+ * #3 Lander 
+ * (front screen)
+ */
+.lander {
+    height: 100vh;
+    h1 {
+        font-size: 55px;
+        span {
+            font-style: italic;
+            color: $themeYellow;
+        }
+    }
+    .logo-box {
+        .logo {
+            margin-top: 100px;
+            width: 100%;
+
+        }
+        p {
+            color: white;
+            text-align: center;
+            font-size: 40px;    
+        }
+    }
+    
+}
+/* 
+ * #4 Collective 
+ */
+.collective {
+    text-align: center;
+    header {
+        padding: 20px;
+        h2 { 
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .header-image {
+            max-width: 200px;
+        }
+    }
+}
+/* 
+ * #5 Bio
+ */
+.bio {
+    text-align: center;
+    .about-text {
+        padding: 20px;
+    }
+    .about-box {
+        //padding-top: 10px;
+        //padding-bottom: 10px;
+        //border-radius: 15px;
+        //background-color: #03a190;
+        //color: white;
+        h1 {
+            font-size: 45px;
+            font-weight: bold;
+        }
+    }
+    .avatar-box {
+        margin-top: 60px;
+        img {
+            border: 10px solid transparent;
+            box-shadow: 0px 0px 0px 20px #f4b3ce;
+        }
+        p {
+            margin-top: 15px;
+            padding: 5px;
+        }
+    }
+}
+/* 
+ * #6 Projects
+ */
+.projects {
+    h1 {
+        text-align: center;
+        font-size: 45px;
+        font-weight: bold;
+    }
+    .project-box {
+        margin-top: 40px;
+        .row {
+            margin-bottom: 15px;
+            > div  { 
+                padding: 2px;
+            }   
+        }
+        .exhibit {
+            padding: 2px;
+            text-align: center;
+            header {
+                padding: 10px;
+                background-color: lighten($themeYellow,10);    
+                h3 {
+                    font-weight: bold;
+                }
+            }
+            article {
+                padding: 15px;
+                text-align: left;
+                background-color: lighten($themeYellow,30)
+            }
+        }
+    }    
+}
+/* 
+ * #6 Footer
+ */
+.footer {
+    padding: 20px;
+    background-color: #dc0259; 
+    text-align: center;
+    span {
+        text-decoration: none;
+        color: white;
+    }
+}
+/* 
+ * #7 Media Styles
+ * Specific styling for different screen sizs
+ */
+/* 
+ * #7A
+ * Applies to all displays above 991 px
+ * (Laptops and Bigger)
+ */
+@media (min-width:992px)
+{
+    body {
+        background-size:contain;
+    }
+    .projects {
+        .project-box {
+            .row > div {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+    }
+}
+/* 
+ * #7B
+ * Applies to all displays below and equal to 991 px
+ * (Tablets and Mobile)
+ */
+@media (max-width:991px)
+{
+    body {
+        background-position: top 180px center;
+    }
+}
+/* 
+ * #7C
+ * Applies to all displays below and equal to 767 px
+ * (Mobile)
+ */
+@media (max-width:767px)
+{
+    body {
+        background-image: url('../img/bg.svg');
+    }
+    section.section {
+        padding-top:60px;
+        padding-bottom: 60px;
+    }
+    .collective {
+        header {
+            h2 { 
+                font-size: 40px;
+            }
+        }
+    }
+    .bio {
+        .avatar-box {
+            img {
+                border: none;
+                box-shadow: none;
+            }
+        }
+    }
+}
