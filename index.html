@@ -1,235 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Hackio</title>
-
-        <!-- CSS -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/typicons/typicons.min.css">
-        <link rel="stylesheet" href="assets/css/animate.css">
-		<link rel="stylesheet" href="assets/css/form-elements.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/media-queries.css">
-
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hackio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/typicons/typicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"> </head>
 
-        <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="assets/ico/favicon.png">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 
-    </head>
+                <img class="hidden-sm hidden-md hidden-lg logo-brand" src="assets/img/logo.svg"/><a class="navbar-brand hidden-sm hidden-md hidden-lg" href="#">Hackio</a>
 
-    <body>
-
-        <!-- Loader -->
-    	<div class="loader">
-    		<div class="loader-img"></div>
-    	</div>
-
-        <!-- Top content -->
-        <div class="top-content">
-
-        	<!-- Top menu -->
-			<nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="index.html">Hackio </a>
-					</div>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="top-navbar-1">
-						<ul class="nav navbar-nav navbar-right">
-							<li><a class="scroll-link" href="#always-beautiful">What we do</a></li>
-							<li><a class="scroll-link" href="#about-us">Team</a></li>
-							<!--<li><a class="btn btn-link-2" href="#">Button</a></li> -->
-						</ul>
-					</div>
-				</div>
-			</nav>
-
-            <div class="inner-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1 class="wow fadeInLeftBig">Developing with <strong>Communities</strong></h1>
-                            <div class="description wow fadeInLeftBig">
-                            	<p>
-	                            	We believe in harnessing the skill present in student communities to bring ideas into the world.
-                            	</p>
-                            </div>
-                            <div class="top-big-link wow fadeInUp">
-                            	<a class="btn btn-link-1 scroll-link" href="#call-to-action">Guided Hackathon</a>
-                            	<a class="btn btn-link-2 scroll-link" href="#always-beautiful">Learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="nav navbar-nav">
+                    <li><a href="#collective">COLLECTIVE</a></li>
+                    <li><a href="#bio">BIO</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="//blog.hackio.co">BLOG</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><button type="button" onclick="redirect()" class="btn btn-default navbar-btn">JOIN US</button></li>
+                    <script>
+                        function redirect() {
+                            window.location = 'https://goo.gl/forms/cd5F9cUPMdtDuhpu1';
+                        }
+                    </script>
+                </ul>
+            </div>
         </div>
+    </nav>
+    <section class="section lander">
+        <div class = "container">
+            <div class = "row">
+                <div class= "col-md-8">
+                    <header>
+                        <h1> * A student collective of Hackers, Makers, Designers, <span> Disruptors.</span></h1>
+                    </header>
 
-        <!-- Always beautiful -->
-        <div class="always-beautiful-container section-container">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-sm-12 always-beautiful section-description wow fadeIn">
-	                    <h2>What we do</h2>
-	                    <div class="divider-1 wow fadeInUp"><span></span></div>
-	                </div>
-	            </div>
-	            <div class="row">
-	            	<div class="col-sm-7 always-beautiful-box wow fadeInLeft">
-	                    <div class="always-beautiful-box-text always-beautiful-box-text-left">
-	                    	<h3>Learn. Teach. Build.</h3>
-	                    	<p class="medium-paragraph">
-	                    		Society does not empathize with the dreams of young creators and we want to change that. We want to help build <span class="blue">the next big thing</span>.
-                            </p><p class ="medium-paragraph">
-                                Our guided hackathon sessions act as a gateway to the Hackio Community which leverages the creative potential of all its members.
-	                    	</p>
-	                    </div>
-	                </div>
-	                <div class="col-sm-5 always-beautiful-box wow fadeInUp">
-	                    <img src="assets/img/devices/pc2.png" alt="">
-	                </div>
-	            </div>
-	        </div>
-        </div>
-
-        <!-- Call to action -->
-        <div class="call-to-action-container section-container section-container-image-bg">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-sm-12 call-to-action section-description wow fadeInLeftBig">
-	                    <h2>The Hackio Guided HACKATHON</h2>
-	                    <div class="divider-1 wow fadeInUp"><span></span></div>
-	                    <p>
-	                        This a 5 day event where we will take any beginner through the basics of python programming and microcontrollers all the way to being able to build a working prototype or a minimum viable product.
-                        </p>
-	                </div>
-	            </div>
-	            <div class="row">
-	            	<div class="col-sm-12 section-bottom-button wow fadeInUp">
-                        <a href="https://goo.gl/forms/t7g3fmfpYI0PBowo1"
-                        class="btn btn-link-1 scroll-link">Register</a>
-	            	</div>
-	            </div>
-	        </div>
-        </div>
-
-        <!-- About us -->
-        <div class="about-us-container section-container">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-sm-12 about-us section-description wow fadeIn">
-	                    <h2>Team</h2>
-	                    <div class="divider-1 wow fadeInUp"><span></span></div>
-	                </div>
-	            </div>
-	            <div class="row">
-	                <div class="col-sm-4 about-us-box wow fadeInUp">
-		                <div class="about-us-photo">
-		                	<img src="assets/img/about/1.jpg" alt="" data-at2x="assets/img/about/1.jpg">
-		                	<!--<div class="about-us-role">Role</div> -->
-		                </div>
-	                    <h3>Gautam Padiyar</h3>
-	                    <p>Community Engagement and Content</p>
-	                    <div class="about-us-social">
-		                	<a href="https://www.facebook.com/gautam.padiyar"><span class="typcn typcn-social-facebook"></span></a>
-		                	<a href="https://gautampadiyar.github.io"><span class="typcn typcn-social-dribbble"></span></a>
-		                    <a href="https://twitter.com/padigautam"><span class="typcn typcn-social-twitter"></span></a>
-		                </div>
-	                </div>
-	                <div class="col-sm-4 about-us-box wow fadeInDown">
-		                <div class="about-us-photo">
-		                	<img src="assets/img/about/2.jpg" alt="" data-at2x="assets/img/about/2.jpg">
-		                	<!--<div class="about-us-role">Role</div> -->
-		                </div>
-	                    <h3>Aniruddha Mysore</h3>
-	                    <p>Website, Content and Innovations</p>
-	                    <div class="about-us-social">
-		                	<a href="https://www.facebook.com/aniruddha.mysore"><span class="typcn typcn-social-facebook"></span></a>
-		                	<a href="http://thenewcon.com"><span class="typcn typcn-social-dribbble"></span></a>
-		                    <a href="#"><span class="typcn typcn-social-twitter"></span></a>
-		                </div>
-	                </div>
-	                <div class="col-sm-4 about-us-box wow fadeInUp">
-		                <div class="about-us-photo">
-		                	<img src="assets/img/about/3.jpg" alt="" data-at2x="assets/img/about/3.jpg">
-		                	<!--<div class="about-us-role">Role</div> -->
-		                </div>
-	                    <h3>Aabharan Hemanth</h3>
-	                    <p>Design and Innovations</p>
-	                    <div class="about-us-social">
-		                	<a href="https://www.facebook.com/aabharan.hemanth"><span class="typcn typcn-social-facebook"></span></a>
-		                	<a href="#"><span class="typcn typcn-social-dribbble"></span></a>
-		                    <a href="#"><span class="typcn typcn-social-twitter"></span></a>
-		                </div>
-	                </div>
-	            </div>
-	        </div>
-        </div>
-
-        <!-- Footer -->
-        <footer>
-	        <div class="container">
-	        	<div class="row">
-                    <div class="col-sm-12 footer-social">
-                    	<a href="#"><span class="typcn typcn-social-facebook"></span></a>
-                    	<a href="#"><span class="typcn typcn-social-dribbble"></span></a>
-                    	<a href="#"><span class="typcn typcn-social-twitter"></span></a>
-                    	<a href="#"><span class="typcn typcn-social-google-plus"></span></a>
-                    	<a href="#"><span class="typcn typcn-social-instagram"></span></a>
-                    	<a href="#"><span class="typcn typcn-social-pinterest"></span></a>
-                    </div>
-	            </div>
-	            <div class="row">
-                    <div class="col-sm-12 footer-copyright">
-                    	&copy; Hackio 2017.
-                    </div>
                 </div>
-	        </div>
-        </footer>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-8 col-md-3 col-md-offset-7 col-sm-4 col-sm-offset-6 hidden-xs logo-box">
+                    <!--<img class="logo img-responsive" src="assets/img/logo.svg"/>
+                    <p class="hidden-xs"> Hackio </p>-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--
+        <img class="bg hidden-xs" src="assets/img/bg-w-logo.svg"/>
+        <img class="bg hidden-sm hidden-md hidden-lg" src="assets/img/bg.svg"/>
+    -->
+    <section class="section collective" id="collective">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <header>
+                        <img class="img-responsive center-block header-image" src="assets/img/person.png"/>
+                        <h2>Collective</h2>
+                    </header>
+                    <article>
+                        A strong and collaborative comunity that fosters innovation and breeds disruptors.
+                    </article>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <header>
+                        <img class="img-responsive center-block header-image" src="assets/img/flag.png"/>
+                        <h2>Events</h2>
+                    </header>
+                    <article>
+                        We go to schools to find the best talent and get them involved in our projects.
+                    </article>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <header>
+                        <img class="img-responsive center-block header-image" src="assets/img/rocket.png"/>
+                        <h2>Projects</h2>
+                    </header>
+                    <article>
+                        We constantly work on projects and collaborate to bring them to the market.
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section bio" id="bio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 about-box">
+                    <h1>Hello</h1>
+                    <p class="about-text">
+                        We are a group of students motivated by the vision of innovation. Based on our experience in school, we are looking to give students a platform where they can find able peers to collaborate on their projects.
+                    </p>
+                </div>
+            </div>
+            <div class="row avatar-box">
+                <div class="col-xs-4 col-md-offset-2 col-md-2">
+                    <img class="img-responsive img-circle" src="assets/img/gp.jpg">
+                    <p> Gautam Padiyar </p>
+                </div>
+                <div class="col-xs-4 col-md-offset-1 col-md-2">
+                    <img class="img-responsive img-circle" src="assets/img/aabharan.jpeg">
+                    <p> Aabharan Hemanth </p>
+                </div>
+                <div class="col-xs-4 col-md-offset-1 col-md-2">
+                    <img class="img-responsive img-circle" src="assets/img/avatar.png">
+                    <p> Aniruddha Mysore </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h1> Projects </h1>
+            <div class="project-box">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class=" exhibit kmun">
+                            <header  data-toggle="collapse" data-target="#kmun" >
+                                <h3> MUN Moderator </h3><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                            </header>
+                            <article>
+                                <div class="collapse" id="kmun">
+                                  <div class="collapse-body">
+                                    <p>A tool to manage and moderate any Model United Nation conference.</p>
+                                  </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class=" exhibit projectx">
+                            <header  data-toggle="collapse" data-target="#projectx" >
+                                <h3> Project X </h3><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                            </header>
+                            <article>
+                                <div class="collapse" id="projectx">
+                                  <div class="collapse-body">
+                                    <p>An electric motorbike startup.</p>
+                                  </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
 
-        <!-- Javascript -->
-        <script src="assets/js/jquery-1.11.1.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.backstretch.min.js"></script>
-        <script src="assets/js/wow.min.js"></script>
-        <script src="assets/js/retina-1.1.0.min.js"></script>
-        <script src="assets/js/scripts.js"></script>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class=" exhibit trashmob">
+                            <header data-toggle="collapse" data-target="#trashmob" >
+                                <h3 > Trashmob </h3><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                            </header>
+                            <article>
+                                <div class="collapse" id="trashmob">
+                                  <div class="collapse-body">
+                                    <p>Trashmob conducts clean up drives at various illegal landfills across the city. Now they're building an app to gamify and propagate the same experience.</p>
+                                  </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class=" exhibit pothole">
+                            <header data-toggle="collapse" data-target="#pothole" >
+                                <h3> Road Quality Audit</h3><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                            </header>
+                            <article>
+                                <div class="collapse" id="pothole">
+                                  <div class="collapse-body">
+                                    <p>A mobile app that detects potholes and bad stretches of road while you're going over them and then makes this data public.</p>
+                                  </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
 
-        <!--[if lt IE 10]>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <span>contact@hackio.co</span>
+        </div>
+    </footer>
+    <!-- Javascript -->
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina-1.1.0.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <!--[if lt IE 10]>
             <script src="assets/js/placeholder.js"></script>
         <![endif]-->
-
-    </body>
+</body>
 
 </html>
-
-
-<!-- TODO
-
-Register link is broken
-add gautam@hackio.co for contact
-Change background image
-setup jekyll for a blog
--->
