@@ -8,8 +8,8 @@
   font-style: normal;
   font-weight: normal;
   src: local("../font/avenir/Avenir Next LT Pro Demi Condensed"), url("../font/avenir/AvenirNextLTPro-DemiCn.woff") format("woff"); }
-/* 
- * #1 Body 
+/*
+ * #1 Body
  */
 body {
   background-image: url(../img/bg-w-logo.svg);
@@ -24,7 +24,7 @@ body {
 .logo-brand {
   height: 40px; }
 
-/* 
+/*
  * #2 Generic Section Style
  */
 .section {
@@ -33,8 +33,8 @@ body {
   width: 100%;
   overflow-x: hidden; }
 
-/* 
- * #3 Lander 
+/*
+ * #3 Lander
  * (front screen)
  */
 .lander {
@@ -52,11 +52,16 @@ body {
     text-align: center;
     font-size: 40px; }
 
-/* 
- * #4 Collective 
+/*
+ * #4 Collective
  */
 .collective {
   text-align: center; }
+  .collective h1{
+      font-size: 50px;}
+      .collective .coming-soon{
+          font-size: 20px;
+      font-weight: bold;}
   .collective header {
     padding: 20px; }
     .collective header h2 {
@@ -65,13 +70,21 @@ body {
     .collective header .header-image {
       max-width: 200px; }
 
-/* 
+/*
  * #5 Bio
  */
 .bio {
   text-align: center; }
   .bio .about-text {
-    padding: 20px; }
+    padding: 10px; }
+    .bio .quote {
+      font-weight: bold;
+      padding-top: : 20px;
+      padding-bottom: 5px;}
+      .bio .quote-by {
+          font-weight: bold;
+        text-align: right;
+         }
   .bio .about-box h1 {
     font-size: 45px;
     font-weight: bold; }
@@ -84,7 +97,7 @@ body {
       margin-top: 15px;
       padding: 5px; }
 
-/* 
+/*
  * #6 Projects
  */
 .projects h1 {
@@ -107,10 +120,41 @@ body {
         font-weight: bold; }
     .projects .project-box .exhibit article {
       padding: 15px;
-      text-align: left;
+      text-align: center;
       background-color: #ffe199; }
+      .projects .people p{
+         text-align: right;
+         font-size: 15px;}
+         .projects .link a{
+             align: center;
+         }
+         .projects .contact{
+             text-align: center;
+         }
 
-/* 
+         .contact{
+             text-align : center;
+             padding: 40px;
+         }
+         .contact h2{
+             font-size: 45px;
+             font-weight: bold;
+         }
+         .contact li{
+             text-align: left;
+         }
+
+      .mentors {
+          padding: 20px;
+          padding-bottom: 50px;
+      }
+      .mentors h1{
+          padding-bottom: 20px;
+          font-size: 45px;
+          font-weight: bold;
+      }
+
+/*
  * #6 Footer
  */
 .footer {
@@ -121,11 +165,11 @@ body {
     text-decoration: none;
     color: white; }
 
-/* 
+/*
  * #7 Media Styles
  * Specific styling for different screen sizs
  */
-/* 
+/*
  * #7A
  * Applies to all displays above 991 px
  * (Laptops and Bigger)
@@ -137,7 +181,7 @@ body {
   .projects .project-box .row > div {
     padding-left: 40px;
     padding-right: 40px; } }
-/* 
+/*
  * #7B
  * Applies to all displays below and equal to 991 px
  * (Tablets and Mobile)
@@ -145,7 +189,7 @@ body {
 @media (max-width: 991px) {
   body {
     background-position: top 180px center; } }
-/* 
+/*
  * #7C
  * Applies to all displays below and equal to 767 px
  * (Mobile)
